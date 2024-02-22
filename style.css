@@ -20,7 +20,7 @@
     .socials img{
       width: 30px;
       height: auto;
-      filter: invert(0);
+      filter: invert(.7);
     }
     .socials img:hover{
       filter: invert(0);
@@ -33,7 +33,7 @@
     }
 
     #spotify:hover{
-      filter: invert(1);
+      filter: invert(.4);
     }
 
     .swatches {
