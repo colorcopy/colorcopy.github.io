@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorcopy - A Random Hex Code Generator</title>
+  <link rel='shortcut icon' href='https://easycss.github.io/favicon/favicon.png' type='image/x-icon' />
+  <link rel='stylesheet' href='style.css' />
+</head>
+<body>
+
+  <nav class="socials">
+      <div class="socials">
+      
+      <a href="https://github.com/colorcopy/colorcopy.github.io" target="_blank">
+        <img src="https://raw.githubusercontent.com/mattheweq/icons-repo/main/github.svg">
+      </a>
+
+      <a href="https://open.spotify.com/artist/66OsKKYin7yLMQUsZxjE91" target="_blank">
+        <img  id="spotify" src="https://raw.githubusercontent.com/mattheweq/icons-repo/main/soundwave.svg">
+      </a>
+
+      <a href="mailto:mattheweq8@gmail.com">
+        <img src="https://raw.githubusercontent.com/mattheweq/icons-repo/main/email.svg">
+      </a>
+    </div>
+  </nav>
+
+  <header>
+    <p class="click-to-copy">Tap colour for Hex Code</p>
+    <button onclick="generateRandomColors()">Generate Random Colors</button>
+  </header>
+
+  <div id="colorContainer" class="swatches"></div>
+  
+  <div id="copiedMessage" class="copiedMessage">Hex code<br/>copied to clipboard</div>
+
+ <script src="app.js"></script>
+</body>
+</html>

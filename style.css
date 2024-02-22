@@ -1,0 +1,114 @@
+  :root{
+      --spacing: 1px;
+      --paletteDescFontSize: 14px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    .socials{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 2rem;
+    }
+    /* SVG ICONS */
+    .socials img{
+      width: 30px;
+      height: auto;
+      filter: invert(0);
+    }
+    .socials img:hover{
+      filter: invert(0);
+    }
+
+    #spotify{
+      width: 45px;
+      margin: -10px 5px 0;
+      filter: invert(0);
+    }
+
+    #spotify:hover{
+      filter: invert(1);
+    }
+
+    .swatches {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--spacing);
+      font-family: monospace;
+      color: #333;
+      font-size: var(--paletteDescFontSize);
+    }
+    .click-to-copy{
+      background-color: black;
+      color: white;
+      height: fit-content;
+      padding: 4px;
+      margin: 10px 0 5px;
+    }
+    button {
+      font-family: sans-serif;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+
+    
+    .colorBox {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .colorCode {
+      position: absolute;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 1);
+      color: black;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 4px;
+      user-select: none;
+    }
+
+    .copiedMessage {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      text-align: center;
+      background-color: #101010;
+      color: #fff;
+      padding: 40px;
+      display: none;
+      font-size: 5vw;
+      font-family: monospace;
+      border-radius: 30px;
+    }
